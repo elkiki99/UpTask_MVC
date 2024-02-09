@@ -1,0 +1,30 @@
+@use "base/mixins" as m;
+@use "base/variables" as v;
+
+.formulario {
+
+    margin: 5rem 0;
+
+    .campo {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    label {
+        flex: 0 0 10rem;
+    }
+
+    .campo input[type="email"],
+    .campo input[type="text"],
+    .campo input[type="password"] {
+        flex: 1;
+        padding: 1rem;
+        border: none;
+        background-color: lighten(v.$gris, 40%);
+    }
+
+    .boton {
+        margin-top: 5rem;
+    }
+}
