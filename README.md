@@ -1,21 +1,21 @@
 
-"Uptask" es una aplicación de gestión de tareas avanzada diseñada para mejorar la productividad y la eficiencia en la organización de proyectos. Con características robustas y una interfaz intuitiva, Uptask permite a los usuarios crear, administrar y completar proyectos de manera eficaz.
+Uptask is an advanced task management application designed to enhance productivity and efficiency in project organization. With robust features and an intuitive interface, Uptask allows users to create, manage, and complete projects effectively.
 
-Las principales características de Uptask incluyen:
+Key features of Uptask include:
 
-Creación y Gestión de Proyectos: Los usuarios pueden crear y organizar múltiples proyectos de manera estructurada, lo que facilita la división del trabajo en tareas específicas.
+Project Creation and Management: Users can create and organize multiple projects in a structured manner, facilitating the division of work into specific tasks.
 
-Administración de Tareas: Uptask ofrece la capacidad de agregar, editar y eliminar tareas dentro de cada proyecto, lo que permite un seguimiento detallado del progreso y los plazos.
+Task Management: Uptask offers the ability to add, edit, and delete tasks within each project, enabling detailed tracking of progress and deadlines.
 
-Autenticación Segura: La autenticación mediante tokens vía email garantiza la seguridad de los usuarios y protege sus datos confidenciales.
+Secure Authentication: Authentication via email tokens ensures user security and protects their confidential data.
 
-Interfaz de Usuario Intuitiva: Con una interfaz de usuario moderna y amigable, Uptask proporciona una experiencia fluida y agradable para los usuarios, lo que facilita la navegación y la interacción con la plataforma.
+Intuitive User Interface: With a modern and user-friendly interface, Uptask provides a smooth and enjoyable experience for users, making navigation and interaction with the platform easy.
 
-Modo Oscuro Integrado: La opción de modo oscuro ofrece una experiencia visual cómoda y reduce la fatiga ocular durante sesiones prolongadas de uso.
+Integrated Dark Mode: The dark mode option provides a comfortable visual experience and reduces eye strain during extended usage sessions.
 
-Integración de Base de Datos: Uptask utiliza una base de datos integrada para almacenar y gestionar la información de los usuarios, proyectos y tareas de manera eficiente y segura.
+Database Integration: Uptask utilizes an integrated database to store and manage user information, projects, and tasks efficiently and securely.
 
-Con Uptask, los profesionales pueden optimizar su tiempo y recursos, mejorar la colaboración en equipo y alcanzar sus objetivos con mayor eficacia. Es la herramienta perfecta para aquellos que buscan una solución completa y moderna para la gestión de proyectos y tareas.
+With Uptask, professionals can optimize their time and resources, improve team collaboration, and achieve their goals more effectively. It is the perfect tool for those seeking a comprehensive and modern solution for project and task management.
 
 Demo: https://qefbaja.sao.dom.my.id/
 user: correo@correo.com
