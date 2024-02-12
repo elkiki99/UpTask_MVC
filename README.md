@@ -16,3 +16,7 @@ Modo Oscuro Integrado: La opción de modo oscuro ofrece una experiencia visual c
 Integración de Base de Datos: Uptask utiliza una base de datos integrada para almacenar y gestionar la información de los usuarios, proyectos y tareas de manera eficiente y segura.
 
 Con Uptask, los profesionales pueden optimizar su tiempo y recursos, mejorar la colaboración en equipo y alcanzar sus objetivos con mayor eficacia. Es la herramienta perfecta para aquellos que buscan una solución completa y moderna para la gestión de proyectos y tareas.
+
+Demo: https://qefbaja.sao.dom.my.id/
+user: correo@correo.com
+pass: 123456
