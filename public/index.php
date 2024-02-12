@@ -37,6 +37,9 @@ $router->post('/proyecto/eliminar', [DashboardController::class, 'eliminar_proye
 $router->get("/proyecto", [DashboardController::class, "proyecto"]);
 $router->get("/perfil", [DashboardController::class, "perfil"]);
 $router->post("/perfil", [DashboardController::class, "perfil"]);
+$router->post("/cambiar-password", [DashboardController::class, "cambiar_password"]);
+$router->get("/cambiar-password", [DashboardController::class, "cambiar_password"]);
+
 
 // API para las tareas (crud)
 $router->get("/api/tareas", [TareaController::class, "index"]);

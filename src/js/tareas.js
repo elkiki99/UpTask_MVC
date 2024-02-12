@@ -153,7 +153,7 @@
                         class="submit-nueva-tarea"
                         value="${tarea.nombre ? "Actualizar Tarea" : "Añadir Tarea"}"
                     />
-                    <button type="button" class="cerrar-modal">Cancelar</button>
+                    <button type="button" class="cerrar-modal">CANCELAR</button>
                 </div>
             </form>
         `;
@@ -323,7 +323,7 @@
     }
 
     async function eliminarTarea(tarea) {
-        const {estado, id, nombre, proyectoId} = tarea;
+        const {estado, id, nombre} = tarea;
         
         const datos = new FormData();
         datos.append("id", id);
@@ -340,7 +340,7 @@
 
             const resultado = await respuesta.json();
             if(resultado.resultado) {
-                mostrarAlerta(resultado.mensaje, resultado.tipo, ".contenedor-nueva-tarea");
+                // mostrarAlerta(resultado.mensaje, resultado.tipo, ".contenedor-nueva-tarea");
 
                 Swal.fire("Eliminado!", resultado.mensaje, "success");
 

@@ -17,15 +17,17 @@ class Usuario extends ActiveRecord {
     public function __construct($args = []) 
     {
         $this->id = $args["id"] ?? null;
-        $this->nombre = $args["nombre"] ?? null;
-        $this->email = $args["email"] ?? null;
-        $this->password = $args["password"] ?? null;
-        $this->password2 = $args["password2"] ?? null;
-        $this->token = $args["token"] ?? null;
+        $this->nombre = $args["nombre"] ?? "";
+        $this->email = $args["email"] ?? "";
+        $this->password = $args["password"] ?? "";
+        $this->password2 = $args["password2"] ?? "";
+        $this->password_actual = $args["password_actual"] ?? "";
+        $this->password_nuevo = $args["password_nuevo"] ?? "";
+        $this->token = $args["token"] ?? "";
         $this->confirmado = $args["confirmado"] ?? 0;
     }
         
-    public function validarLogin() {
+    public function validarLogin() : array {
         if(!$this->email) {
             self::$alertas["error"][] = "El email es obligatorio";
         }
@@ -39,7 +41,7 @@ class Usuario extends ActiveRecord {
     }
 
     // Validación de cuentas nuevas
-    public function validarNuevaCuenta() {
+    public function validarNuevaCuenta() : array {
         if(!$this->nombre) {
             self::$alertas["error"][] = "El nombre es obligatorio";
         }
@@ -59,7 +61,7 @@ class Usuario extends ActiveRecord {
     }
 
     // Validar email
-    public function validarEmail() {
+    public function validarEmail() : array {
         if(!$this->email) {
             self::$alertas["error"][] = "El email es obligatorio";
         }
@@ -70,7 +72,7 @@ class Usuario extends ActiveRecord {
     }
 
     // Validar password
-    public function validarPassword() {
+    public function validarPassword() : array {
         if(!$this->password) {
             self::$alertas["error"][] = "El password es obligatorio";
         }
@@ -80,13 +82,41 @@ class Usuario extends ActiveRecord {
         return self::$alertas;
     }
 
+    public function validarPerfil() : array {
+        if(!$this->nombre) {
+            self::$alertas["error"][] = "El nombre es obligatorio";
+        }
+        if(!$this->email) {
+            self::$alertas["error"][] = "El e-mail es obligatorio";
+        }
+        return self::$alertas;
+    }
+
+    public function nuevoPassword() : array {
+        if(!$this->password_actual) {
+            self::$alertas["error"][] = "El password es obligatorio";
+        }
+        if(!$this->password_nuevo) {
+            self::$alertas["error"][] = "El password es obligatorio";
+        }
+        if(strlen($this->password_nuevo) < 6) {
+            self::$alertas["error"][] = "El password debe contener al menos 6 caracteres";
+        }
+        return self::$alertas;
+    }
+
+    // Comprobar Password
+    public function comprobarPassword() : bool {
+        return password_verify($this->password_actual, $this->password);
+    }
+
     // Hashear el password
-    public function hashPassword() {
+    public function hashPassword() : void {
         $this->password = password_hash($this->password, PASSWORD_BCRYPT);
     }
 
     // Generar un Token
-    public function crearToken() {
+    public function crearToken() : void {
         $this->token = uniqid();
     }
 }
